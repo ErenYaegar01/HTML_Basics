@@ -50,7 +50,7 @@ class DiceGame:
  
     def play(self):
         print("=============================")
-        print("🎲 Welcome to Roll the Dice!")
+        print("🎲 Welcome to Roll Of Death!!!")
         print("=============================")
    
         while True:
