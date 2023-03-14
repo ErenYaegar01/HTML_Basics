@@ -78,8 +78,9 @@ class DiceGame:
             print("The computer won this round. 😥 Try again.")
             self.update_counters(winner=self.computer, loser=self.player)
         else:
+
             print("It's a  terrible tie! 😎")
- 
+
         # Show the counters of the players
         self.show_counters()
  
