@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UZ-Compatible" content="IE=FireFox">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Google Forms</title>
+</head>
+
+<body style="background-image: url('peakpx.jpg');color: violet; font-size: medium;font-style:italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <form action="/action_page.php" autocomplete="on">
+        <fieldset>
+            <legend>Welcome to the Anime World!!!!!!!!!!</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="textbox" id="fname" name="fname" value="Gojo" readonly><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="textbox" id="lname" name="lname" value="Satoru" readonly><br><br>
+
+            <h3>Do You Like Satoru Gojo?</h3>
+            <button type="button" onclick="alert('Yes We Like Gojo!!!!!!!!!')">Yes</button>
+            <button type="button" onclick="alert('Hmm.....Then you are sukuna fan right?!!!!')">No</button>
+
+            <h3>Do you Like Anime??</h3>
+            <input type="radio" id="yes" name="radio" value="Yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="No" name="radio" value="Yes">
+            <label for="No">No</label>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Categories of Anime!</legend>
+            <label for="option">Choose the anime that you like...</label>
+            <select id="option" name="option" size="3" multiple required>
+                <option value="Naruto">Naruto</option>
+                <option value="Dragon Ball z" selected>DBZ</option>
+                <option value="Attack on Titans">AOT</option>
+            </select><br><br>
+
+            <label for="animes">Choose the anime type!!!...</label>
+            <input list="animes" name="animes" required>
+            <datalist id="animes">
+                <option value="Jujutsu Kaisen"></option>
+                <option value="Haikyu"></option>
+                <option value="Hajime No hippo"></option>
+                <option value="Blue Lock"></option>
+            </datalist>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Login Credentials!!</legend>
+
+            <label for="user">Username:</label>
+            <input type="text" id="user" name="user" maxlength="20" autofocus placeholder="Name" required><br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" maxlength="10" placeholder="pass" required><br><br>
+
+            <label for="date">Choose today's Date and Time: </label>
+            <input type="datetime-local" id="date" name="date" ><br><br>
+
+            <label for="color">Choose the color that you want: </label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="dob">Choose your birth date: </label>
+            <input type="number" id="dob" name="dob" min="1" max="31" pattern="[01-31]"><br><br>
+
+            <label for="bdaymonth">Choose your birth month:</label>
+            <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+
+            <label for="day">The day that you are filling this form:</label>
+            <input type="text" id="day" name="day" pattern="[A-Za-z]{15}" title="please type only strings" placeholder="M-T-W-TH-F-Sa-SU">
+        </fieldset><br><br>
+
+        <h3>Did you fill out this form?</h3>
+
+        
+        <input type="radio" id="check" name="check" value="Yes">
+        <label for="check">Yes</label>
+
+        <input type="radio" id="chec" name="check" value="No">
+        <label for="chec">No</label><br><br>
+
+        <label for="box">Submited right?</label>
+        <input type="checkbox" id="box" name="box"><br><br>
+
+        <input type="submit" id="submit" name="submit">
+        <input type="reset" id="reset" name="reset">
+
+    </form>
+</body>
+
+</html>
