@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+  <!-- Scenario -1 -->
+  div, span {
+    color: blue;
+  }
+  div, span.red {
+    background: green;
+  }
+  <!-- Scenario 2 -->
+  div ~ p {
+    color: violet;
+  }
+  div > p {
+    color : blue
+  }
+  div + p {
+    background : green;
+  }
+  
+</style
+<head>
+<body>
+  <!-- This is scenario 1 -->
+<div class="black">
+  <span> This is a blank text </span>
+</div>
+  <!-- Scenario 2 -->
+<div>
+  <input type ="text" required>
+  <span class ="red"> This is a blank text box </span>
+  <span> Saiyan Prince Vegeta </span>
+  <p> keep Moving <span> Forward </span> </p>
+  </div> <!-- @ -->
+  <h1> Scenario 2 <h1>
+  <p>Push through the Pain. Giving Up Hurts More.</p>
+  <p>You may have invaded my mind and body but there is one thing a Saiyan always keeps… his pride</p>
+  <span> Vegeta prince </span>
+</body>
+  <html>
+
+
+<!-- Scenario 1 -->
+  <! -- In this scenario the tags which have mentioned above will get the effect irrespective of the class mentioned -->
+  <!-- On the other the second part is the div will get the effect of CSS irrespective of the class and the span tag which is having the class value as "red" will get the effect. -->
+
+<!-- Scenario - 2 -->
+  <!-- In this scenario we can see "div ~ p" at the end of div tag "@" we can see so many tags in that "p" will get the CSS effect. If we get n number of 'p' tags every tags which is sibling of div means it will get the effect-->
+  <!-- On the other hand, we can see "div > p", '>' indicates the direct child of the tag so div's tag direct child "p" so inside the div tag no matter how many "P" tags are there if it is direct child means it will get the effect.-->
+  <!---  In this scenario "div + p", after the div "@" immediate "P" tag will get this effect other than that 'p' doesn't get this effect.-->
+  
