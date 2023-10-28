@@ -18,7 +18,15 @@
   div + p {
     background : green;
   }
-  
+  li:first-type{
+    background-color:Yellow;
+  }
+  span:first-of-type{
+    background:green;
+  }
+  li:not(.red){
+    color:purple;
+  }
 </style
 <head>
 <body>
@@ -37,6 +45,16 @@
   <p>Push through the Pain. Giving Up Hurts More.</p>
   <p>You may have invaded my mind and body but there is one thing a Saiyan always keeps… his pride</p>
   <span> Vegeta prince </span>
+
+<!-- Scenario 3 -->
+  <div>
+  <ul>
+  <li class="red" >Vegeta</li>
+  <li>Goku</li>
+  <li>Eren</li>
+  <li class="Blue">Yagami</li>
+  <li>Ichigo</li>
+  </div>
 </body>
   <html>
 
@@ -49,4 +67,13 @@
   <!-- In this scenario we can see "div ~ p" at the end of div tag "@" we can see so many tags in that "p" will get the CSS effect. If we get n number of 'p' tags every tags which is sibling of div means it will get the effect-->
   <!-- On the other hand, we can see "div > p", '>' indicates the direct child of the tag so div's tag direct child "p" so inside the div tag no matter how many "P" tags are there if it is direct child means it will get the effect.-->
   <!---  In this scenario "div + p", after the div "@" immediate "P" tag will get this effect other than that 'p' doesn't get this effect.-->
+
+  <!-- Sceanrio- 3 -->
+  <!-- In this scenario 'li:first-of-type' mentions the list's first child so in that case "vegeta" will be selected, if we give like "li.red:first-child", it will not select the first child in this case beacuse it only cares about the first child.
+  in our case we give the slelctor as to match the first child having the class named "red" but its not working it simply selects the first child so in this case when we give the class name,
+  which is not in the first child it will not work (Other possible selectors are - li:last-child, li:nth-child(n), li:nth-last-child(2n), li:only-child)-->
   
+  <!-- On the other hand we have the selector as "span:first-of-type",like it will only select the span which is of first type like we are having spans inside the div tag means, the selector will select the first type of span in that one-->
+  <!-- Some alternate selectors are (span:last-of-type, span:nth-of-type(n), span:only-of-type - which selects only the span tag which is present inside any tags)-->
+
+  <!-- In the selector "li:not(.red)", this selector will simply selects all the li tags except the li tags which is having the class value as "red"-->
